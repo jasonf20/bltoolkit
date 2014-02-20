@@ -20,20 +20,28 @@ namespace BLToolkit
 		/// <summary>
 		/// Build component of version.
 		/// </summary>
-		public const string Build = "16";
+		public const string Build = "21";
 
 		/// <summary>
 		/// Full version string.
 		/// </summary>
-		public const string FullVersionString = MajorVersion + "." + MinorVersion + "." + Build + "." + Revision;
+        public const string FullVersionString = MajorVersion + "." + MinorVersion + "." + Build + "." + AutoRevision;
 
 		/// <summary>
 		/// Full BLT version.
 		/// </summary>
 		public static readonly Version FullVersion = new Version(FullVersionString);
 
-		public const string ProductName        = "Business Logic Toolkit";
+		public const string ProductName        = "BLToolkit";
 		public const string ProductDescription = "Business Logic Toolkit for .NET";
-		public const string Copyright          = "\xA9 2002-2012 www.bltoolkit.net";
+		public const string Copyright          = "\xA9 2002-2013 www.bltoolkit.net";
 	}
+
+    partial class BLToolkitConstants
+    {
+        // <summary>
+        // Revision component of version.
+        // <summary>
+        public const string AutoRevision = "15";
+    }
 }
